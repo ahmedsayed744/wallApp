@@ -10,10 +10,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:spendwise/core/routing/navigator_key.dart';
 
-class DocApp extends StatelessWidget {
+class Walletix extends StatelessWidget {
   final AppRouter appRouter;
   final bool isFirstTime;
-  const DocApp({super.key, required this.appRouter, required this.isFirstTime});
+  const Walletix({super.key, required this.appRouter, required this.isFirstTime});
 
   @override
   Widget build(BuildContext context) {

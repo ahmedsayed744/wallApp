@@ -8,12 +8,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:spendwise/core/routing/app_router.dart';
-import 'package:spendwise/doc_app.dart';
+import 'package:spendwise/walletix_app.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(DocApp(appRouter: AppRouter(), isFirstTime: false,));
+    await tester.pumpWidget(Walletix(appRouter: AppRouter(), isFirstTime: false,));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

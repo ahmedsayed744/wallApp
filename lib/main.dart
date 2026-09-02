@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spendwise/core/routing/app_router.dart';
 import 'package:spendwise/core/storage/local_storage.dart';
-import 'package:spendwise/doc_app.dart';
+import 'package:spendwise/walletix_app.dart';
 import 'package:spendwise/feature/home/model/transaction_model.dart';
 import 'package:spendwise/core/i18n/locale_manager.dart';
 import 'package:spendwise/core/notifications/notification_service.dart';
@@ -30,7 +30,7 @@ void main() async {
   // Initialize notifications before runApp to handle launch payloads
   await NotificationService.init();
 
-  runApp(DocApp(appRouter: AppRouter(), isFirstTime: false,));
+  runApp(Walletix(appRouter: AppRouter(), isFirstTime: false,));
 
   // Background Initializations (Non-blocking)
   _initServicesAsync();

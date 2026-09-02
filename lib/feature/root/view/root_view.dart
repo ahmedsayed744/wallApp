@@ -67,12 +67,11 @@ class _RootViewState extends State<RootView> {
               controller: controller,
               children: _screens,
             ),
-
             // Bottom Nav Bar
             bottomNavigationBar: Container(
               padding: EdgeInsets.symmetric(vertical: 8),
               decoration: BoxDecoration(
-                color: AppColors.neutralColor,
+                color: Color(0xFF2C3E50),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(20),
@@ -87,8 +86,8 @@ class _RootViewState extends State<RootView> {
                 elevation: 0,
                 backgroundColor: Colors.transparent,
                 type: BottomNavigationBarType.fixed,
-                selectedItemColor: Color(0xFF2C3E50),
-                unselectedItemColor: Colors.grey.shade700,
+                selectedItemColor: AppColors.neutralColor,
+                unselectedItemColor: Colors.grey.shade500,
                 items: [
                   BottomNavigationBarItem(
                     icon: Icon(
@@ -110,7 +109,7 @@ class _RootViewState extends State<RootView> {
                     icon: Icon(
                       currentIndex == 2
                           ? CupertinoIcons.chart_bar_alt_fill
-                          : CupertinoIcons.shopping_cart,
+                          : CupertinoIcons.chart_bar,
                     ),
                     label: S.of(context).report,
                   ),
