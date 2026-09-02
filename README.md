@@ -78,7 +78,7 @@ Presentation Layer (View & Widgets)
    Data / Storage Layer (HiveManager, LocalStorage)
 ```
 
-* **State Management:** 
+* **State Management:**
   * `flutter_bloc` (Cubit pattern) for screen-level complex states (`RememberMeCubit`, `NavigationCubit`).
   * `ValueNotifier` for lightweight global application singletons (`globalTransactions`, `globalBudget`, `globalLocale`).
 * **Service Decoupling:** `SummaryService` is a pure Dart domain class isolated from UI frameworks, enabling fast execution and simplified unit testing.
@@ -190,7 +190,7 @@ lib/
 
 ## 📸 Screenshots
 
-<!-- 
+<!--
 Add application screenshots here.
 | Home Screen | Expense Tracking | Monthly Summary | Remember Me |
 |:---:|:---:|:---:|:---:|
